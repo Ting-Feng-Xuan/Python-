@@ -345,7 +345,7 @@ class ChessAi():
                 #"""左上----右下"""
                 if suppose_map[i][j] == true and suppose_map[i + 1][j + 1] == true:
                     # 1.不在边缘
-                    if i > 0 and i < 13 and i < 13 and j > 0:
+                    if i > 0 and j < 13 and i < 13 and j > 0:
                         if suppose_map[i - 1][j - 1] == 0 and suppose_map[i + 2][j + 2] == 0:
                             code += Evaluation_Criteria["活2"]
                         elif suppose_map[i - 1][j - 1] == opponent and suppose_map[i + 2][j + 2] == 0:
